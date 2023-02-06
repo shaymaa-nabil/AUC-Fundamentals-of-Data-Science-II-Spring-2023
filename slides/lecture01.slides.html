@@ -50,7 +50,6 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
 .highlight .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
 .highlight .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
-.highlight .pm { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation.Marker */
 .highlight .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
 .highlight .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
 .highlight .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
@@ -14496,9 +14495,6 @@ a.anchor-link {
 .reveal {
   font-size: 160%;
 }
-.reveal table {
-  font-size: var(--jp-ui-font-size1);
-}
 .reveal pre {
   width: inherit;
   padding: 0.4em;
@@ -14542,23 +14538,6 @@ div.jp-OutputPrompt {
   margin: 5px 5px 0 0;
 }
 
-.reveal div.highlight {
-  margin: 0;
-}
-
-.reveal div.highlight > pre {
-  margin: 0;
-  width: 100%;
-  font-size: var(--jp-code-font-size);
-}
-
-.reveal div.jp-OutputArea-output > pre {
-  margin: 0;
-  width: 90%;
-  font-size: var(--jp-code-font-size);
-  box-shadow: none;
-}
-
 /* Reveal navigation controls */
 
 .reveal .controls .navigate-left,
@@ -14599,14 +14578,17 @@ div.jp-OutputPrompt {
 
 /* Scrollbars */
 
-::-webkit-scrollbar {
+::-webkit-scrollbar
+{
   width: 6px;
   height: 6px;
 }
-::-webkit-scrollbar * {
-  background: transparent;
+::-webkit-scrollbar *
+{
+  background:transparent;
 }
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb
+{
   background: #727272 !important;
 }
 </style>
@@ -14633,12 +14615,12 @@ div.jp-OutputPrompt {
                 },
                 displayAlign: 'center',
                 CommonHTML: {
-                    linebreaks: {
-                    automatic: true
+                    linebreaks: { 
+                    automatic: true 
                     }
                 }
             });
-
+        
             MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
         }
     }
@@ -14652,60 +14634,65 @@ div.jp-OutputPrompt {
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 
 <div class="reveal">
-<div class="slides"><section ><section >
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+<div class="slides"><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Introduction-to-Python">Introduction to Python<a class="anchor-link" href="#Introduction-to-Python">&#182;</a></h1>
+<h1 id="Introduction-to-Python">Introduction to Python<a class="anchor-link" href="#Introduction-to-Python">&#182;</a></h1><p>Content adopted from <a href="https://github.com/Pierian-Data/Complete-Python-3-Bootcamp">Pierian Data</a></p>
+
 </div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="What-is-Python-and-why-use-it">What is Python and why use it<a class="anchor-link" href="#What-is-Python-and-why-use-it">&#182;</a></h1><p>Python is a</p>
-<ul>
+<h1 id="What-is-Python-and-why-use-it">What is Python and why use it<a class="anchor-link" href="#What-is-Python-and-why-use-it">&#182;</a></h1><ul>
 <li><strong>high-level</strong>,</li>
-<li><strong>interpreted</strong>,</li>
+<li><strong>interpreted</strong>, </li>
 <li><strong>general-purpose</strong> programming language that is used for a wide range of applications.</li>
 <li>It is easy to learn, powerful, and</li>
 <li>has a large community of users.</li>
 </ul>
 
 </div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Why-is-it-called-Python?">Why is it called Python?<a class="anchor-link" href="#Why-is-it-called-Python?">&#182;</a></h1><p>When he began implementing Python, Guido van Rossum was also reading the published scripts from “Monty Python's Flying Circus”, a BBC comedy series from the 1970s. Van Rossum thought he needed a name that was short, unique, and slightly mysterious, so he decided to call the language Python.</p>
 <p><sub>--General Python FAQ</sub></p>
 
 </div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Variable">Variable<a class="anchor-link" href="#Variable">&#182;</a></h1><p>A variable is a named storage location used to hold a value. The value of a variable can be changed and it can be used in expressions and operations</p>
+
 </div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Variable-Assignment">Variable Assignment<a class="anchor-link" href="#Variable-Assignment">&#182;</a></h1><ul>
+<li>Rules for variable names</li>
+<li>names can not start with a number</li>
+<li>names can not contain spaces, use _ intead</li>
+<li>names can not contain any of these symbols: <code>'",&lt;&gt;/?|\!@#%^&amp;*~-+</code></li>
+<li>accoding to Style Guide for Python Code (<a href="https://www.python.org/dev/peps/pep-0008/#function-and-variable-names">PEP8</a>), it's considered best practice that names are lowercase with underscores</li>
+<li>avoid using Python built-in keywords like <code>list</code> and <code>str</code></li>
+<li>avoid using the single characters l (lowercase letter el), O (uppercase letter oh) and I (uppercase letter eye) as they can be confused with 1 and 0</li>
+</ul>
+
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Dynamic-Typing">Dynamic Typing<a class="anchor-link" href="#Dynamic-Typing">&#182;</a></h1><p>Python uses <em>dynamic typing</em>, meaning you can reassign variables to different data types. This makes Python very flexible in assigning data types; it differs from other languages that are statically typed.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">y</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="nb">print</span> <span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_cat</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">my_cat</span>
 </pre></div>
 
      </div>
@@ -14713,25 +14700,324 @@ div.jp-OutputPrompt {
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_cat</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Basbousa&#39;</span><span class="p">,</span> <span class="s1">&#39;Lucy&#39;</span><span class="p">]</span>
+<span class="n">my_cat</span>
+</pre></div>
 
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>3
-</pre>
+     </div>
 </div>
 </div>
-
 </div>
 
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Pros-and-Cons-of-Dynamic-Typing">Pros and Cons of Dynamic Typing<a class="anchor-link" href="#Pros-and-Cons-of-Dynamic-Typing">&#182;</a></h1><ul>
+<li>Pros of Dynamic Typing<ul>
+<li>very easy to work with</li>
+<li>faster development time</li>
+</ul>
+</li>
+<li>Cons of Dynamic Typing<ul>
+<li>may result in unexpected bugs!</li>
+<li>you need to be aware of type()</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Assigning-Variables">Assigning Variables<a class="anchor-link" href="#Assigning-Variables">&#182;</a></h1><p>Variable assignment follows <code>name = object</code>, where a single equals sign <code>=</code> is an assignment operator</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">a</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Reassigning-Variables">Reassigning Variables<a class="anchor-link" href="#Reassigning-Variables">&#182;</a></h1><p>Python lets you reassign variables with a reference to the same object.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">10</span>
+<span class="n">a</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>There's actually a shortcut for this. Python lets you add, subtract, multiply and divide numbers with reassignment using <code>+=</code>, <code>-=</code>, <code>*=</code>, and <code>/=</code>.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">+=</span> <span class="mi">10</span>
+<span class="n">a</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">*=</span> <span class="mi">2</span>
+<span class="n">a</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Determining-variable-type-with-type()">Determining variable type with <code>type()</code><a class="anchor-link" href="#Determining-variable-type-with-type()">&#182;</a></h1><p>You can check what type of object is assigned to a variable using Python's built-in type() function. Common data types include:</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Numbers">Numbers<a class="anchor-link" href="#Numbers">&#182;</a></h1><p>Basically there are two types of numbers:</p>
+<ul>
+<li>2 is interger <code>int</code></li>
+<li>2.0 is floating point <code>float</code></li>
+</ul>
+<table>
+<thead><tr>
+<th>Example</th>
+<th>Number Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1,2,-5,1000</td>
+<td>Integers</td>
+</tr>
+<tr>
+<td>1.2,-0.5,2e2,3E2</td>
+<td>Floating point</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Basic Arithmetic 1/2</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span> <span class="c1"># Addition</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span> <span class="c1"># Subtraction</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">2</span><span class="o">*</span><span class="mi">2</span> <span class="c1"># Multiplication</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span> <span class="c1"># Division</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Basic Arithmetic 2/2</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">2</span><span class="o">**</span><span class="mi">3</span> <span class="c1"># Powers</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Question: how to calculate the sequare root of 16?</p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Order-of-Operations">Order of Operations<a class="anchor-link" href="#Order-of-Operations">&#182;</a></h1>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs   celltag_hide-output">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">2</span> <span class="o">+</span> <span class="mi">10</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">3</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="mi">2</span><span class="o">+</span><span class="mi">10</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">10</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
 </div>
 
 </div></section></section>
@@ -14764,7 +15050,6 @@ require(
             progress: true,
             history: true,
             transition: "slide",
-            slideNumber: "",
             plugins: [RevealNotes]
         });
 
