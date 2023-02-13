@@ -17,6 +17,7 @@ jupyter nbconvert $lecture.ipynb --TagRemovePreprocessor.remove_input_tags "hide
 mv $lecture.pdf $HOME/pdfs/
 
 cd $HOME
+git pull
 git add --all
 git commit -m "Updated $lecture"
 git push
